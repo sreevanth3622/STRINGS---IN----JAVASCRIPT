@@ -6,40 +6,75 @@
         <h1>HERE I WILL DISCUSS ALL STRING METHODS</h1>
         <script>
             function len(str){
-              return str.length;
+              return str.length;//length os string
              }
              console.log(len("sreevanth"));
         </script>
         <script>
             function uppercase(str){
-                return str.toUpperCase();
+                return str.toUpperCase();//lowercase to uppercase
             }
             console.log(uppercase("sreevanth"));
         </script>
         <script>
             function lowercase(str){
-                return str.toLowerCase();
+                return str.toLowerCase();//uppercase to lowercase
             }
             console.log(lowercase("HBDBFKDFDHFUD"));
         </script>
         <script>
             let village="B.kothakota";
-            console.log(village[0]);
+            console.log(village[0]);//character Access
             console.log(village[1]);
             console.log(village[5]);
         </script>
         <script>
             let language="english";
-            console.log(language[language.length-2]);
-            console.log(language[language.length-1]);
+            console.log(language[language.length-2]);//TO find 2 nd last element
+            console.log(language[language.length-1]);//To find last element 
         </script>
-        <script>
-            let language2="javascript";
-            name2=language2.substring(1,6);
-            name3=language2.substring(3);
-            console.log(name2);
-            console.log(name3);
-            console.log(language2.substring(1));
-        </script>
+            <script>
+                let language2="javascript";
+                name2=language2.substring(1,6);
+                name3=language2.substring(3);   //SUbstring Methods
+                console.log(name2);
+                console.log(name3);
+                console.log(language2.substring(1));
+            </script>
+            <script>
+                const name="HELLO";
+                const name2="WORLD";
+                console.log(name+name2);
+                console.log("HELLO"+" "+"WORLD"+" "+"MY NAME IS SREEVANTH");
+            </script>
+            <script>
+                let language3="Meachinelearning";
+                name5=`I AM LEARNING ${language3}`;
+                console.log(name5);
+                let name7="sreevanth";
+                console.log(`I am ${name7}.
+                you have ${2*9} new notifications`);
+            </script>
+            <script>
+                function fullname(firstname,lastname){
+                    return `${firstname} ${lastname}`;
+                }
+                console.log("Nayani","sreevanth");
+                console.log("kogara","Bharath");
+            </script>
+                <script>
+                    function multilinestring(){
+                        return `I AM SREEVANTH 
+                        I AM FROM B.KOTHAKOTA
+                        I AM IN MITS COLLEGE`;
+                    }
+                    console.log(multilinestring());
+                </script>
+                <script>
+                    function capitalize(str){
+                    return str[0].toUpperCase()+str.substring(1).toLowerCase();
+                    }
+                    console.log(capitalize("nayani"));
+                </script>
     </body>
 </html>
